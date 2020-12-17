@@ -28,7 +28,7 @@ const NewFriendForm = (props) => {
         e.preventDefault()
         console.log(newFriend)
         axiosWithAuth()
-        .post('api/friends', newFriend)
+        .post('/friends', newFriend)
         .then(res=>{
             props.fetchFriends()
         })
